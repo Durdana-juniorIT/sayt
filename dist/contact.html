@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f7f2">
+    <meta name="description" content="Sayt yaratish loyihangizni muhokama qilish uchun biz bilan bog‘laning.">
+    <title>Aloqa — Sayt Yaratish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Asosiy navigatsiya">
+            <a class="brand" href="home.html" aria-label="Sayt Yaratish bosh sahifa"><span class="brand-mark">s.</span><span>sayt<span class="brand-light">yaratish</span></span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menyuni ochish"><span></span><span></span></button>
+            <div class="nav-links" id="nav-links"><a href="home.html">Bosh sahifa</a><a href="about.html">Biz haqimizda</a><a href="home.html#services">Xizmatlar</a><a class="active" href="contact.html">Aloqa</a><a class="button button-dark nav-cta" href="#contact-form">Loyiha boshlash <span aria-hidden="true">↗</span></a></div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero container">
+            <div class="contact-intro"><span class="eyebrow"><span class="status-dot"></span> ALOQA</span><h1>G‘oyangizni<br><span class="accent-text">gaplashamiz.</span></h1><p>Loyihangiz qanday bo‘lishidan qat’i nazar, birinchi qadam — suhbat. Quyidagi formani to‘ldiring.</p><div class="contact-note"><span>✳</span><p><strong>Yaxshi sayt yaxshi suhbatdan boshlanadi.</strong><br>So‘rov Telegram botga yuboriladi; buning uchun server sozlamalari kerak.</p></div></div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-heading"><span class="eyebrow">LOYIHA SO‘ROVI</span><h2>Keling, boshlaymiz.</h2><p>Ma’lumotlaringiz Telegram orqali loyiha jamoasiga yuboriladi.</p></div>
+                <label for="name">Ismingiz</label><input id="name" name="name" type="text" placeholder="Masalan, Azizbek" autocomplete="name" required>
+                <label for="email">Elektron pochtangiz</label><input id="email" name="email" type="email" placeholder="azizbek@email.com" autocomplete="email" required>
+                <label for="project">Qanday sayt kerak?</label><select id="project" name="project" required><option value="" selected disabled>Birini tanlang</option><option>Biznes sayti</option><option>Landing page</option><option>Onlayn do‘kon</option><option>Boshqa loyiha</option></select>
+                <label for="message">Loyihangiz haqida</label><textarea id="message" name="message" rows="4" placeholder="G‘oyangizni qisqacha yozing..." required></textarea>
+                <button class="button button-dark form-submit" type="submit">So‘rovni yuborish <span aria-hidden="true">↗</span></button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="home.html"><span class="brand-mark">s.</span><span>sayt<span class="brand-light">yaratish</span></span></a><span>G‘oyangizga mos sayt. © <span class="current-year"></span></span><div><a href="home.html">Bosh sahifa</a><a href="about.html">Biz haqimizda</a></div></div></footer>
+</body>
+</html>
